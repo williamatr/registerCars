@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Registro de Autos para Rentar</title>
+  </head>
+  <body>
+    <header><h1>Registro de autos para rentar - ACME 💯</h1></header>
+    <main class="container">
+      <h2>Selecciones una de las opciones para agregar objetos a la lista</h2>
+      <section class="container__select">
+        <button id="list">Ver lista completa</button>
+        <button id="add">Agregar vehiculo</button>
+        <button id="example">Agregar ejemplo</button>
+      </section>
+
+      <section class="container__list" id="section_list" style="display: flex">
+        <div class="container__list__title">
+          <h3>Lista de vehiculos registrados</h3>
+        </div>
+        <div class="container__list__table">
+          <table class="tabla" id="tabla_list">
+            <thead>
+              <tr>
+                <th>MARCA</th>
+                <th>MODELO</th>
+                <th>AÑO</th>
+                <th>PLACA</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="container__create" id="section_add" style="display: none">
+        <div class="container__create__head">
+          <h3>Agregar vehiculo manualmente</h3>
+          <div class="container__create__head__inputs">
+            <div>
+              <p>Marca</p>
+              <input id="inMarca" type="text" class="InputTexto"/>
+            </div>
+            <div>
+              <p>Modelo</p>
+              <input id="inModelo" type="text" class="InputTexto"/>
+            </div>
+            <div>
+              <p>Año</p>
+              <input id="inAnno" type="numer" class="InputTexto"/>
+            </div>
+            <div>
+              <p>Placa</p>
+              <input id="inPlaca" type="text" class="InputTexto"/>
+            </div>
+          </div>
+          <button onclick="manual()" class="boton">Añadir vehiculo</button>
+        </div>
+
+        <div class="container__create__table">
+          <table class="tabla" id="tabla_create">
+            <thead>
+              <tr>
+                <th>MARCA</th>
+                <th>MODELO</th>
+                <th>AÑO</th>
+                <th>PLACA</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+      <section
+        class="container__example"
+        id="section_example"
+        style="display: none"
+      >
+        <div class="contenedor-02">
+          <h2 class="inputPregunta">Cantidad de Registros:</h2>
+          <input
+            type="number"
+            id="numberCars"
+            value="1"
+            class="InputTexto"
+            step="1"
+          />
+          <button onclick="example()" class="boton">Generar</button>
+        </div>
+        <div>
+          <h3>Campos añadidos a la lista</h3>
+        </div>
+        <div id="demo">
+          <table class="tabla" id="tabla_example">
+            <thead>
+              <tr>
+                <th>MARCA</th>
+                <th>MODELO</th>
+                <th>AÑO</th>
+                <th>PLACA</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+    <footer>Desarrollado por William Tovar</footer>
+    <script src="listObjt.js"></script>
+  </body>
+</html>
