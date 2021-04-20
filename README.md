@@ -2,7 +2,7 @@
 
 ## Aplicacion en HTML / CSS / JS para registrar vehiculos
 <div align="center">
-    <img src="./CapturaApp.png" alt="" width="400" height="358" />
+    <img src="./CapturaApp.png" alt="" width="400" height="420" />
 </div>
 <p align="center">
 Proyecto para el curso base de JS de Platzi en el cual se pone en practica los conceptos de objetos y loops
