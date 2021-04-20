@@ -7,6 +7,10 @@
 <p align="center">
 Proyecto para el curso base de JS de Platzi en el cual se pone en practica los conceptos de objetos y loops
 </p>
+
+<p align="center">
+Aun no tiene CSS, espere actualizaciones :V
+</p>
 <p align="center">
     Puedes probar la aplicacion en el siguiente Link!
 </p>
